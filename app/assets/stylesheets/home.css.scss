@@ -1,0 +1,516 @@
+@import "compass/css3/images";
+@import "compass/layout/sticky-footer";
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/layout/stretching";
+
+
+$objBg: #f5f5f5;
+$TextColor: #666666;
+$boxPadding: 20px;
+$linkColor: #159fa4;
+
+$grey: #E6E6E6;
+
+
+$NavTextColor: #666666;
+$NavTextColorHover: #666666;
+$NavHeight: 35px;
+$FontFamily: "Helvetica Neue", helvetica;
+$navHoverBorder: #d3d3d3;
+
+
+$buttonColor: #ffffff;
+$buttonBg: #159fa4;
+$buttonColorHover: #159fa4;
+$buttonBgHover: #ffffff;
+
+
+
+@mixin SideText {
+  a {
+    color: $linkColor;
+    font-size: 13px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+  span {
+    color: $TextColor;
+    font-size: 11px;
+    padding: 0;
+  }
+}
+
+.small-text {
+  font-size: 10px;
+  position: relative;
+  top: -2px;
+  color: #B3B3B3
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
+.button {
+  padding: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  @include transition-property(all);
+  @include transition-duration(0.1s);
+  @include transition-timing-function(linear);
+  @include border-radius(5px);
+}
+
+
+
+.blue {
+  @extend button;
+  background: $buttonBg;
+  color: $buttonColor;
+  &:hover {
+    background: $grey;
+    color: $TextColor;
+  }
+  &:active {
+    background: $TextColor;
+    color: $grey;
+  }
+}
+
+.grey {
+  background: $grey;
+  color: $TextColor;
+  border: 1px solid $TextColor;
+  &:hover {
+    background: $TextColor;
+    color: $grey;
+    border: 1px solid $grey;
+  }
+}
+
+
+/* End of declarations */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $FontFamily;
+}
+
+nav#secondary {
+  height: $NavHeight;
+  @include stretch;
+  @include background($objBg);
+  border-top: 1px solid #d3d3d3;
+  @include box-shadow(#ccc 0px 2px 5px);
+  position: relative;
+
+  ul {
+    @include horizontal-list-container;
+
+    li{
+      @include horizontal-list-item;
+      height: $NavHeight;
+      padding-left: 15px;
+      padding-right: 15px;
+      &:last-child {
+        padding-right: 15px;
+      }
+      &:first-child {
+        padding-left: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: $NavTextColor;
+        font-family: $FontFamily;
+        text-align: center;
+        font-size: 12px;
+        line-height: $NavHeight;
+      }
+      &:hover{
+        @include background(linear-gradient(bottom, rgb(230,230,230) 0%, rgb(207,207,207) 73%));
+        border-right: 1px solid $navHoverBorder;
+        border-left: 1px solid $navHoverBorder;
+        a {
+          color: $NavTextColorHover;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+div.stats {
+  @include background($objBg);
+  @include box-shadow(#ccc 0px 2px 5px);
+  padding: $boxPadding;
+  float: left;
+  color: $TextColor;
+  table {
+    width: 100%;
+    padding-top: 10px;
+  }
+  div table tr td {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+  }
+  .statsHeader {
+    font-size: 20px;
+  }
+  .statLabel,  .statNumber{
+    font-size: 12px;
+  }
+  .statLabel {
+    width: 85%;
+    text-align: left;
+  }
+  .statNumber {
+    color: $buttonColorHover;
+    width: 15%;
+    text-align: left;
+  }
+
+}
+
+div.sideBox {
+  background: transparent;
+  border: 1px solid #B3B3B3;
+  float: left;
+  width: 280px;
+  @include border-radius(15px);
+  hr {
+    color: #B3B3B3;
+    width: 100%;
+    padding: 0;
+  }
+  .sideTitle {
+    text-align: left;
+    font-size: 16px;
+    line-height: 16px;;
+    padding: 10px;
+  }
+  .sideTag span {
+    background: $grey;
+    padding: 5px 10px 5px 10px;
+    @include border-radius(5px);
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #d3d3d3;
+    &:hover {
+      background: $TextColor;
+      color: $grey;
+    }
+
+  }
+
+  div.sideEvents {
+    padding-left: 10px;
+    @include SideText;
+  }
+
+  div.sideImage {
+    div {
+      width: 32px;
+      height: 32px;
+      background: #add8e6;
+      float: left;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  div.sideActivity {
+    padding: 5px;
+    @include SideText;
+    div {
+      width: 32px;
+      height: 32px;
+      background: #add8e6;
+      float: left;
+      margin-left: 5px;
+      margin-bottom: 10px;
+      margin-right: 5px;
+    }
+  }
+
+}
+
+
+div.UserProfileCard {
+  @include background($objBg);
+  @include box-shadow(#ccc 0px 2px 5px);
+  padding: $boxPadding;
+  float: left;
+  color: $TextColor;
+  width: 540px;
+  @include SideText;
+  div.small {
+    width: 18px;
+    height: 18px;
+    background: #add8e6;
+    float: left;
+    margin: 0 5px 0 5px;
+    @include border-radius(5px);
+  }
+  img {
+    position: relative;
+    top: 5px;
+  }
+  div.large {
+    width: 156px;
+    height: 156px;
+    background: #add8e6;
+    float: left;
+    margin: 0 10px 0 0;
+    @include border-radius(10px);
+  }
+  h1 {
+    font-size: 30px;
+    color: $linkColor;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+  }
+  div#footer {
+    position: relative;
+    top: 80px;
+  }
+
+}
+
+article.activityBox {
+  width: 200px;
+  height: 300px;
+  background: $objBg;
+  float: left;
+  margin: 20px 10px 20px 10px;
+  @include border-radius(5%);
+  img.activityImage {
+    width: 200px;
+    height: 160px;
+    @include border-top-left-radius(5%);
+    @include border-top-right-radius(5%);
+  }
+  header {
+    h5, p{
+      margin-left: 3%;
+    }
+    a {
+      color: $linkColor;
+      font-size: 16px;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    p {
+      color: $TextColor;
+      font-size: 12px;
+    }
+  }
+  .activityBody {
+    ul {
+
+      li {
+        display: inline;
+        float: left;
+        margin: 0 5% 0 5%;
+      }
+    }
+  }
+}
+
+div.Notification {
+  background: transparent;
+  border: 1px solid #B3B3B3;
+  float: left;
+  width: 652px;
+  @include border-radius(10px);
+  h1 {
+    margin: 0;
+    color: $TextColor;
+    font-weight: normal;
+    text-align: left;
+    font-size: 18px;
+    line-height: 16px;;
+    padding: 10px;
+  }
+  .notiBody {
+    float: none;
+    display: block;
+    overflow: hidden;
+    hr {
+      color: #B3B3B3;
+      width: 100%;
+    }
+    p {
+      color: $TextColor;
+      font-size: 13px;
+      display: inline;
+    }
+    a {
+      color: $linkColor;
+      font-size: 13px;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    div.notiImg {
+      width: 60px;
+      height: 60px;
+      background: #add8e6;
+      float: left;
+      margin: 0 10px 0 10px;
+      @include border-radius(10px);
+    }
+    .button {
+      margin: 0 5px 0 5px;
+    }
+
+  }
+
+}
+
+
+header#main {
+  @include background($objBg);
+  border-top: 1px solid #d3d3d3;
+  @include box-shadow(#ccc 0px 2px 5px);
+  height: 75px;
+  div#headerLeft {
+    vertical-align: middle;
+    height: 75px;
+    margin-top: 12px;
+    float: left;
+    a img, input {
+      vertical-align: middle;
+      margin: 0 10px 0 10px;
+    }
+  }
+  div#headerMenu {
+    float: left;
+    height: 75px;
+    vertical-align: middle;
+    margin: 40px;
+    a {
+      color: $TextColor;
+      text-decoration: none;
+      text-align: right;
+      line-height: 20px;
+      font-size: 12px;
+      margin-left: 5px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    div#dashboard {
+      margin: auto 20px auto 20px;
+
+      div {
+        background: url("icons.png") no-repeat;
+        @include background-size(160px 200px);
+        background-position: -40px -160px;
+        border: none;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    div#notiMenu {
+      margin: auto 20px auto 20px;
+
+      div {
+        background: url("icons.png") no-repeat;
+        @include background-size(160px 200px);
+        background-position: -60px -160px;
+        border: none;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    div#createNewMenu {
+      margin: auto 20px auto 20px;
+
+      div {
+        background: url("icons.png") no-repeat;
+        @include background-size(160px 200px);
+        background-position: -80px -160px;
+        border: none;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    div#userMenu {
+      margin: auto 20px auto 20px;
+
+      float: left;
+      margin-left: 5px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      ul#userDrop {
+        padding: 0;
+        margin: 10px 0 0 0;
+        background: $objBg;
+        border: $TextColor;
+
+        border-bottom: 1px solid #999999;
+        border-left: 1px solid #999999;
+        border-right: 1px solid #999999;
+        hr {
+          border: solid 1px #999999;
+        }
+         li {
+           display: table-row;
+           div#editProfile {
+             padding: 5px;
+
+             div {
+               background: url("icons.png") no-repeat;
+               @include background-size(160px 200px);
+               background-position: -100px -160px;
+               border: none;
+               width: 20px;
+               height: 20px;
+             }
+           }
+           div#manageOffering {
+             padding: 5px;
+
+             div {
+               background: url("icons.png") no-repeat;
+               @include background-size(160px 200px);
+               background-position: -20px -160px;
+               border: none;
+               width: 20px;
+               height: 20px;
+             }
+           }
+           a#signOutTop {
+             margin-left: 25px;
+             padding: 5px;
+
+           }
+         }
+      }
+    }
+  }
+}

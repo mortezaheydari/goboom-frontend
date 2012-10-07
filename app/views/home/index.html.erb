@@ -1,0 +1,257 @@
+<header id="main">
+  <div id="headerLeft">
+    <a href="#" id="mainLogo"><%= image_tag "logo.png" %></a>
+    <input type="search" placeholder="search" />
+  </div>
+  <div id="headerMenu">
+    <div id="dashboard" class="left">
+      <div class="left"></div>
+      <a href="#">Dashboard</a>
+    </div>
+    <div id="notiMenu" class="left">
+      <div class="left"></div>
+      <a href="#">Notifications</a>
+    </div>
+    <div id="createNewMenu" class="left">
+      <div class="left"></div>
+      <a href="#">Create New</a>
+    </div>
+    <div id="userMenu">
+      <a href="#"><%= image_tag "rails.png", :class => "left" %> Morteza Heydari</a>
+      <ul id="userDrop">
+        <li>
+          <div id="editProfile" class="left">
+            <div class="left"></div>
+            <a href="#">Edit Profile</a>
+          </div>
+        </li>
+        <li>
+          <div id="manageOffering" class="left">
+            <div class="left"></div>
+            <a href="#">Manage Offerings</a>
+          </div>
+        </li>
+        <hr>
+        <li><a href="#" id="signOutTop">Sign out</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</header>
+
+<!--
+
+<nav id="secondary">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">blog</a></li>
+  </ul>
+</nav>
+
+
+
+<a href="#" class="button blue left">Follow</a>
+
+<a href="#" class="button blue left">
+  world
+</a>
+
+<div class="stats">
+  <span class="statsHeader">Basic Stats</span>
+  <div>
+    <table>
+      <tr>
+        <td class="statLabel">
+          Classes:
+        </td>
+        <td class="statNumber">
+          11
+        </td>
+      </tr>
+      <tr>
+        <td class="statLabel">
+          Games:
+        </td>
+        <td class="statNumber">
+          7
+        </td>
+      </tr>
+      <tr>
+        <td class="statLabel">
+          Tournaments:
+        </td>
+        <td class="statNumber">
+          1
+        </td>
+      </tr>
+      <tr>
+        <td class="statLabel">
+          Teams:
+        </td>
+        <td class="statNumber">
+          4
+        </td>
+      </tr>
+      <tr>
+        <td class="statLabel">
+          Wins:
+        </td>
+        <td class="statNumber">
+          7
+        </td>
+      </tr>
+      <tr>
+        <td class="statLabel">
+          Losses:
+        </td>
+        <td class="statNumber">
+          2
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="sideBox">
+  <div class="sideTitle">Intrests</div>
+  <hr>
+  <div class="sideTag">
+    <span>Football</span>
+    <span>Basketball</span>
+    <span>Volleyball</span>
+    <span>Jet Ski</span>
+    <span>Karate</span>
+    <span>Fitness</span>
+  </div>
+</div>
+
+
+<div class="sideBox">
+  <div class="sideTitle">Your Upcoming Events</div>
+  <hr>
+  <div class="sideEvents">
+    <a href="#">Jetski Race & Race</a><br>
+    <span>August 23</span><br>
+    <span>5:00pm-7:00pm</span>
+  </div>
+  <hr>
+  <div class="sideEvents">
+    <a href="#">Jetski Race & Race</a><br>
+    <span>August 23</span><br>
+    <span>5:00pm-7:00pm</span>
+  </div>
+  <hr>
+  <div class="sideEvents">
+    <a href="#">Jetski Race & Race</a><br>
+    <span>August 23</span><br>
+    <span>5:00pm-7:00pm</span>
+  </div>
+</div>
+
+<div class="sideBox">
+  <div class="sideTitle">Your Upcoming Events</div>
+  <hr>
+  <div class="sideImage">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+
+<div class="sideBox">
+  <div class="sideTitle">Your Upcoming Events</div>
+  <hr>
+  <div class="sideActivity">
+    <div></div>
+    <a href="#">Morteza Heydari</a>
+    <span> is now following and maybe something else</span><br>
+    <span>1 hour ago</span>
+  </div>
+  <div class="sideActivity">
+    <div></div>
+    <a href="#">Morteza Heydari</a>
+    <span> is now following you</span><br>
+    <span>1 hour ago</span>
+  </div>
+  <div class="sideActivity">
+    <div></div>
+    <a href="#">Morteza Heydari</a>
+    <span> is now following ABDULLAH</span><br>
+    <span>1 hour ago</span>
+  </div>
+</div>
+
+
+<div class="UserProfileCard">
+  <div class="large"></div>
+  <h1>Abdullah Al Jouan</h1>
+  <div class="small"></div>
+  <div class="small"></div>
+  <a href="#">http://www.google.com/</a>
+  <div id="footer">
+    <span>First Boomer</span>
+    <span >1</span>
+    <%= image_tag "test.png" %><span>122</span>
+  </div>
+</div>
+
+
+<% i = 0
+   while i<6 do %>
+    <article class="activityBox">
+      <header class="activityHeader">
+        <a href="#">
+          <%= image_tag "bg.png", class: "activityImage" %>
+        </a>
+        <h5 class="activityTitle text-left">
+          <a href="#">The maximum words available okay</a>
+        </h5>
+        <p class="text-left">Cross Country Running</p>
+      </header>
+
+      <div class="activityBody text-center">
+        <ul class="block-grid three-up">
+          <li><%= image_tag "1.png" %></li>
+          <li><%= image_tag "2.png" %> <span class="small-text">22</span> </li>
+          <li><%= image_tag "3.png" %></li>
+        </ul>
+
+      </div>
+    </article>
+
+   <% i = i + 1
+      end %>
+
+
+<div class="Notification">
+  <h1>Notifiations</h1>
+  <% i = 0
+     while i<6 do %>
+
+  <div class="notiBody">
+    <hr>
+    <div class="notiImg"></div>
+    <a href="#">Morteza Heydari</a> <p>Challanged You for a</p> <a href="#">Football Game</a> <br>
+    <span class="small-text">7 min ago</span>
+    <a href="#"><div class="button grey right">Accept</div></a>
+    <a href="#"><div class="button grey right">Ignore</div></a>
+
+  </div>
+
+  <% i = i + 1
+     end %>
+</div>
+
+-->
