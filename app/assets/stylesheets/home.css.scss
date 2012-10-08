@@ -389,12 +389,20 @@ div.Notification {
 
 }
 
+section.page {
+  width: 100%;
+  position: absolute;
+}
+
 
 header#main {
   @include background($objBg);
   border-top: 1px solid #d3d3d3;
   @include box-shadow(#ccc 0px 2px 5px);
+  position: relative;
+  top: 0;
   height: 75px;
+  z-index: 1;
   div#headerLeft {
     vertical-align: middle;
     height: 75px;
@@ -511,6 +519,73 @@ header#main {
            }
          }
       }
+    }
+  }
+}
+
+
+
+article.userCard {
+  width: 200px;
+  height: 200px;
+  background: $objBg;
+  float: left;
+  margin: 20px 10px 20px 10px;
+  @include border-radius(5%);
+  header {
+    margin: 15px 0 0 15px;
+    height: 60px;
+    h5, p{
+      margin-left: 3%;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: normal;
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      color: $linkColor;
+      font-size: 16px;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    img.userCardImage {
+      width: 50px;
+      height: 50px;
+      margin-right: 5px;
+      @include border-radius(10px);
+    }
+  }
+  .userCardLevel {
+    border-top: solid 1px #ffffff;
+    border-bottom: solid 1px #ffffff;
+    padding: 15px;
+    p {
+      color: $TextColor;
+      padding: 0;
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+
+  div.userCardRecent {
+    padding: 15px;
+    p {
+      color: $TextColor;
+      padding: 0;
+      margin: 0;
+      font-size: 10px;
+    }
+    div {
+      background: #add8e6;
+      float: left;
+      margin: 5px;
+      height: 32px;
+      width: 32px;
+      @include border-radius(5px);
     }
   }
 }

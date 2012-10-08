@@ -40,7 +40,7 @@
 
 </header>
 
-<!--
+<section class="page">
 
 <nav id="secondary">
   <ul>
@@ -231,8 +231,8 @@
       </div>
     </article>
 
-   <% i = i + 1
-      end %>
+<% i = i + 1
+   end %>
 
 
 <div class="Notification">
@@ -240,18 +240,47 @@
   <% i = 0
      while i<6 do %>
 
-  <div class="notiBody">
-    <hr>
-    <div class="notiImg"></div>
-    <a href="#">Morteza Heydari</a> <p>Challanged You for a</p> <a href="#">Football Game</a> <br>
-    <span class="small-text">7 min ago</span>
-    <a href="#"><div class="button grey right">Accept</div></a>
-    <a href="#"><div class="button grey right">Ignore</div></a>
+      <div class="notiBody">
+        <hr>
+        <div class="notiImg"></div>
+        <a href="#">Morteza Heydari</a> <p>Challanged You for a</p> <a href="#">Football Game</a> <br>
+        <span class="small-text">7 min ago</span>
+        <a href="#"><div class="button grey right">Accept</div></a>
+        <a href="#"><div class="button grey right">Ignore</div></a>
 
-  </div>
+      </div>
 
   <% i = i + 1
      end %>
 </div>
 
--->
+
+<% i = 0
+   while i<6 do %>
+    <article class="userCard">
+      <header class="userCardHeader">
+        <a href="#">
+          <%= image_tag "bg.png", class: "userCardImage left" %>
+        </a>
+        <h5 class="userCardTitle text-left">
+          <a href="#">Abdulmohsen al Abdulmuralib</a>
+        </h5>
+      </header>
+
+      <div class="userCardLevel">
+        <p>Level: First Boomer</p>
+      </div>
+
+      <div class="userCardRecent text-left">
+        <p>Recent Activities</p>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </article>
+
+<% i = i + 1
+   end %>
+
+</section>
