@@ -248,6 +248,17 @@ div.sideBox {
       margin-bottom: 10px;
       margin-right: 5px;
     }
+    span {
+      font-size: 11px;
+      color: $grey;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 13px;
+      color: $TextColor;
+      display: inline;
+    }
   }
 
 }
@@ -589,3 +600,140 @@ article.userCard {
     }
   }
 }
+
+
+
+div.intrestCat {
+  width: 100%;
+  h1 {
+    color: $TextColor;
+    font-weight: normal;
+    font-size: 18px;
+    margin-left: 15px;
+  }
+
+  div.Categories {
+    width: 800px;
+    float: left;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid $grey;
+    div {
+      text-align: center;
+      margin: 0 30px 0px 0px;
+      div {
+        margin: 0px 15px 10px 15px;
+      }
+      span {
+        color: $TextColor;
+        font-size: 12px;
+      }
+      div#BallSports {
+        background: url("icons.png") no-repeat;
+        @include background-size(400px 500px);
+        background-position: -50px 0px;
+        border: none;
+        width: 50px;
+        height: 50px;
+        &:hover {
+          background-position: -50px -50px;
+        }
+        &:active {
+          background-position: -50px -100px;
+        }
+      }
+      div#Fitness {
+        background: url("icons.png") no-repeat;
+        @include background-size(400px 500px);
+        background-position: -100px 0px;
+        border: none;
+        width: 50px;
+        height: 50px;
+        &:hover {
+          background-position: -100px -50px;
+        }
+        &:active {
+          background-position: -100px -100px;
+        }
+      }
+      div#WaterSports {
+        background: url("icons.png") no-repeat;
+        @include background-size(400px 500px);
+        background-position: -150px 0px;
+        border: none;
+        width: 50px;
+        height: 50px;
+        &:hover {
+          background-position: -150px -50px;
+        }
+        &:active {
+          background-position: -150px -100px;
+        }
+      }
+      div#Other {
+        background: url("icons.png") no-repeat;
+        @include background-size(400px 500px);
+        background-position: -200px 0px;
+        border: none;
+        width: 50px;
+        height: 50px;
+        &:hover {
+          background-position: -200px -50px;
+        }
+        &:active {
+          background-position: -200px -100px;
+        }
+      }
+    }
+  }
+  div.intrestFooter {
+    float: left;
+    border-top: 1px solid $grey;
+    width: 800px;
+    padding: 20px;
+  }
+  div.sportSelect {
+    text-align: center;
+    width: 800px;
+
+    div {
+      width: 80px;
+      float: left;
+      margin: 15px 0 15px 0;
+      span {
+        color: $TextColor;
+        font-size: 12px;
+      }
+    }
+    label {
+      display: none;
+    }
+    .regular-checkbox {
+      display: none;
+    }
+    .regular-checkbox + label {
+      background-color: #ffffff;
+      border: 1px solid $linkColor;
+      padding: 9px;
+      @include border-radius(50%);
+      display: inline-block;
+      position: relative;
+    }
+    .regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+      content: '';
+      background-color: $linkColor;
+    }
+    .regular-checkbox:checked + label {
+      background-color: $linkColor;
+      border: 1px solid $linkColor;
+    }
+    .regular-checkbox:checked + label:after {
+      content: '';
+      background-color: $linkColor;
+    }
+
+  }
+}
+
+
+
+
