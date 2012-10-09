@@ -1,0 +1,80 @@
+$blueprint_grid_columns: 20;
+$blueprint_grid_width: 40px;
+
+
+@import "compass";
+@import "blueprint";
+@import "compass/css3/images";
+@import "compass/layout/sticky-footer";
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/layout/stretching";
+
+@mixin divReset {
+    margin: 0 auto;
+    overflow: visible;
+    display: block;
+    float: none;
+    margin-bottom: 50px;
+}
+
+html, body {
+  width: 100%;
+}
+
+div.page {
+  @include container;
+  @include divReset;
+
+  width: 100%;
+
+  div#headerContainer {
+    width: 100%;
+    @include background($objBg);
+    @include box-shadow(#ccc 0px 2px 5px);
+    header#main {
+      @include column(20);
+      @include divReset;
+    }
+  }
+
+
+  div.userInfo {
+    @include column(20);
+    @include divReset;
+    div.stats {
+      margin: 0 50px 0 50px;
+    }
+  }
+
+  div.secondMenu {
+    @include column(20);
+    @include background($objBg);
+    @include box-shadow(#ccc 0px 2px 5px);
+    border-top: 1px solid #d3d3d3;
+    display: inline;
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  div.body {
+    @include column(20);
+    display: block;
+    float: none;
+    margin: 0 auto;
+    div.cards {
+      @include column(14);
+      @include divReset;
+      float: left;
+    }
+
+    div.sideBar {
+      @include column(6);
+      @include divReset;
+      float: left;
+    }
+  }
+
+
+}
