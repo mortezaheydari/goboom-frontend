@@ -315,7 +315,7 @@
     <property name="options.lastSelected" value="ruby.project.structure" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="/Library/WebServer/Documents/lobby/activityv4.html" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
