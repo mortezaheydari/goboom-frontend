@@ -40,6 +40,22 @@ $buttonBgHover: #ffffff;
 // start of shared styles
 
 
+a {
+  color: $linkColor;
+  font-size: 13px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+span {
+  color: $TextColor;
+  font-size: 11px;
+  padding: 0;
+}
+
+
 
 
 .small-text {
@@ -75,6 +91,15 @@ $buttonBgHover: #ffffff;
 }
 
 
+.event {
+	display:table;
+	height:100%;
+	background:$objBg;
+	width:100%;
+}
+
+
+
 .blue {
   @extend button;
   background: $buttonBg;
@@ -88,17 +113,6 @@ $buttonBgHover: #ffffff;
     color: $grey;
   }
 }
-
-
-.event {
-	display:table;
-	height:100%;
-	background:$objBg;
-	width:100%;
-}
-
-
-
 
 .grey {
   background: $grey;
