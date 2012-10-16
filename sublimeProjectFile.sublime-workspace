@@ -1,0 +1,252 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/assets/stylesheets/home.css.scss",
+			"settings":
+			{
+				"buffer_size": 16602,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<div class=\"page\">\n    <div id=\"headerContainer\">\n      <header id=\"main\">\n        <div id=\"headerLeft\">\n          <a href=\"#\" id=\"mainLogo\"><%= image_tag \"logo.png\" %></a>\n          <input type=\"search\" placeholder=\"search\" />\n        </div>\n        <div id=\"headerMenu\">\n          <div id=\"dashboard\" class=\"left\">\n            <div class=\"left\"></div>\n            <a href=\"#\">Dashboard</a>\n          </div>\n          <div id=\"notiMenu\" class=\"left\">\n            <div class=\"left\"></div>\n            <a href=\"#\">Notifications</a>\n          </div>\n          <div id=\"createNewMenu\" class=\"left\">\n            <div class=\"left\"></div>\n            <a href=\"#\">Create New</a>\n          </div>\n          <div id=\"userMenu\">\n            <a href=\"#\"><%= image_tag \"rails.png\", :class => \"left\" %> Morteza Heydari</a>\n            <ul id=\"userDrop\">\n              <li>\n                <div id=\"editProfile\" class=\"left\">\n                  <div class=\"left\"></div>\n                  <a href=\"#\">Edit Profile</a>\n                </div>\n              </li>\n              <li>\n                <div id=\"manageOffering\" class=\"left\">\n                  <div class=\"left\"></div>\n                  <a href=\"#\">Manage Offerings</a>\n                </div>\n              </li>\n              <hr>\n              <li><a href=\"#\" id=\"signOutTop\">Sign out</a></li>\n            </ul>\n          </div>\n\n        </div>\n\n      </header>\n    </div>\n    \n    \n\n  <div class=\"userInfo\">\n    <div class=\"UserProfileCard\">\n      <div class=\"large\"></div>\n      <h1>Abdullah Al Jouan</h1>\n      <div class=\"small\"></div>\n      <div class=\"small\"></div>\n      <a href=\"#\">http://www.google.com/</a>\n      <footer>\n        <span>First Boomer</span>\n        <span >1</span>\n        <%= image_tag \"test.png\" %><span>122</span>\n      </footer>\n    </div>\n\n    <div class=\"stats\">\n      <span class=\"statsHeader\">Basic Stats</span>\n      <div>\n        <table>\n          <tr>\n            <td class=\"statLabel\">\n              Classes:\n            </td>\n            <td class=\"statNumber\">\n              11\n            </td>\n          </tr>\n          <tr>\n            <td class=\"statLabel\">\n              Games:\n            </td>\n            <td class=\"statNumber\">\n              7\n            </td>\n          </tr>\n          <tr>\n            <td class=\"statLabel\">\n              Tournaments:\n            </td>\n            <td class=\"statNumber\">\n              1\n            </td>\n          </tr>\n          <tr>\n            <td class=\"statLabel\">\n              Teams:\n            </td>\n            <td class=\"statNumber\">\n              4\n            </td>\n          </tr>\n          <tr>\n            <td class=\"statLabel\">\n              Wins:\n            </td>\n            <td class=\"statNumber\">\n              7\n            </td>\n          </tr>\n          <tr>\n            <td class=\"statLabel\">\n              Losses:\n            </td>\n            <td class=\"statNumber\">\n              2\n            </td>\n          </tr>\n        </table>\n      </div>\n    </div>\n\n    <div class=\"activityOrigin\">\n      <div class=\"OriginTitle\">Activity Originator</div>\n      <div class=\"img\"></div>\n      <a href=\"#\" class=\"originTitle\">Morteza Mansour Heydari</a>\n      <p>Level 2: Game Originator</p>\n    </div>\n\n    <a href=\"#\" class=\"button blue left\">Follow</a>\n    <a href=\"#\" class=\"button blue left\">Challenge</a>\n    <a href=\"#\" class=\"button blue left\">Recommend</a>\n\n\n  </div>\n\n  <div class=\"secondMenu\">\n    <nav id=\"secondary\">\n      <ul>\n        <li><a href=\"#\">Players</a></li>\n        <li><a href=\"#\">Activities</a></li>\n        <li><a href=\"#\">Likes (14)</a></li>\n        <li><a href=\"#\">Following (21)</a></li>\n        <li><a href=\"#\">Followers (22)</a></li>\n      </ul>\n    </nav>\n  </div>\n\n  <div class=\"body\">\n    <div class=\"cards\">\n\n      <% i = 0\n         while i<12 do %>\n          <article class=\"userCard\">\n            <header class=\"userCardHeader\">\n              <a href=\"#\">\n                <%= image_tag \"bg.png\", class: \"userCardImage left\" %>\n              </a>\n              <h5 class=\"userCardTitle text-left\">\n                <a href=\"#\">Abdulmohsen al Abdulmuralib</a>\n              </h5>\n            </header>\n\n            <div class=\"userCardLevel\">\n              <p>Level: First Boomer</p>\n            </div>\n\n            <div class=\"userCardRecent text-left\">\n              <p>Recent Activities</p>\n              <div></div>\n              <div></div>\n              <div></div>\n              <div></div>\n            </div>\n          </article>\n\n      <% i = i + 1\n         end %>\n    </div>\n\n    <div class=\"sideBar\">\n\n      <div class=\"sideBox\">\n        <div class=\"sideTitle\">Intrests</div>\n        <hr>\n        <div class=\"sideTag\">\n          <span>Football</span>\n          <span>Basketball</span>\n          <span>Volleyball</span>\n          <span>Jet Ski</span>\n          <span>Karate</span>\n          <span>Fitness</span>\n        </div>\n      </div>\n\n\n      <div class=\"sideBox\">\n        <div class=\"sideTitle\">Similar Players</div>\n        <hr>\n        <div class=\"sideImage\">\n          <div></div>\n          <div></div>\n          <div></div>\n          <div></div>\n          <div></div>\n          <div></div>\n          <div></div>\n          <div></div>\n          <div></div>\n          <div></div>\n          <div></div>\n          <div></div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n\n</div>",
+			"file": "app/views/user/index.html.erb",
+			"file_size": 5384,
+			"file_write_time": 1350289419000000,
+			"settings":
+			{
+				"buffer_size": 5384,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 327.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"",
+				"Bookmarks: Select All"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/morteza/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/morteza/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/morteza/sites/goboom-frontend/app/views/user/index.html.erb",
+		"/Users/morteza/sites/goboom-frontend/app/assets/stylesheets/home.css.scss",
+		"/Users/morteza/sites/goboom-frontend/app/assets/stylesheets/application.css.scss",
+		"/Users/morteza/sites/goboom-frontend/app/assets/javascripts/application.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"escap",
+			"  "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/assets/stylesheets/home.css.scss",
+					"settings":
+					{
+						"buffer_size": 16602,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								401,
+								401
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/user/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 5384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1552,
+								1552
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 166.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"userkey",
+				"/Users/morteza/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap"
+			],
+			[
+				"index",
+				"app/views/user/index.html.erb"
+			],
+			[
+				"home",
+				"app/assets/stylesheets/home.css.scss"
+			],
+			[
+				"home.css",
+				"app/assets/stylesheets/home.css.scss"
+			],
+			[
+				"inde",
+				"app/views/user/index.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 122.0,
+	"status_bar_visible": true
+}

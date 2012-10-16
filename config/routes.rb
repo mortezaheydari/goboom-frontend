@@ -1,5 +1,8 @@
 Compass::Application.routes.draw do
   get "user/index"
+  get "user/notification"
+  get "user/interest_select"
+  get "user/game"
 
   get "home/index"
 

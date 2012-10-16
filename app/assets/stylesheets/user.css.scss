@@ -22,9 +22,11 @@ html, body {
   width: 100%;
 }
 
+
 div.page {
   @include container;
   @include divReset;
+  margin-bottom: 0px;
 
   width: 100%;
 
@@ -42,8 +44,11 @@ div.page {
   div.userInfo {
     @include column(20);
     @include divReset;
-    div.stats {
-      margin: 0 50px 0 50px;
+    div.stats{
+      margin: 0 75px 0 75px;
+    }
+    div.locationPartial {
+      margin: 0 20px 0 20px;
     }
   }
 
@@ -58,11 +63,26 @@ div.page {
     width: 100%;
   }
 
+  div.dashboard {
+    width: 990px;
+    margin:0 auto;
+    div.topText {
+      width:990px;
+      float:left;
+      padding-top:10px;
+      padding-bottom:10px;
+      span {
+        font-size:18px;
+      }
+    }
+  }
+
   div.body {
     @include column(20);
     display: block;
     float: none;
     margin: 0 auto;
+    height:100%;
     div.cards {
       @include column(14);
       @include divReset;

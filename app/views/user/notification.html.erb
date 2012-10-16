@@ -1,0 +1,71 @@
+<div class="page">
+    <div id="headerContainer">
+      <header id="main">
+        <div id="headerLeft">
+          <a href="#" id="mainLogo"><%= image_tag "logo.png" %></a>
+          <input type="search" placeholder="search" />
+        </div>
+        <div id="headerMenu">
+          <div id="dashboard" class="left">
+            <div class="left"></div>
+            <a href="#">Dashboard</a>
+          </div>
+          <div id="notiMenu" class="left">
+            <div class="left"></div>
+            <a href="#">Notifications</a>
+          </div>
+          <div id="createNewMenu" class="left">
+            <div class="left"></div>
+            <a href="#">Create New</a>
+          </div>
+          <div id="userMenu">
+            <a href="#"><%= image_tag "rails.png", :class => "left" %> Morteza Heydari</a>
+            <ul id="userDrop">
+              <li>
+                <div id="editProfile" class="left">
+                  <div class="left"></div>
+                  <a href="#">Edit Profile</a>
+                </div>
+              </li>
+              <li>
+                <div id="manageOffering" class="left">
+                  <div class="left"></div>
+                  <a href="#">Manage Offerings</a>
+                </div>
+              </li>
+              <hr>
+              <li><a href="#" id="signOutTop">Sign out</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </header>
+    </div>
+    
+    
+
+ 
+
+  <div class="body">
+    <div class="Notification">
+      <h1>Notifiations</h1>
+      <% i = 0
+         while i<6 do %>
+
+          <div class="notiBody">
+            <hr>
+            <div class="notiImg"></div>
+            <a href="#">Morteza Heydari</a> <p>Challanged You for a</p> <a href="#">Football Game</a> <br>
+            <span class="small-text">7 min ago</span>
+            <a href="#"><div class="button grey right">Accept</div></a>
+            <a href="#"><div class="button grey right">Ignore</div></a>
+
+          </div>
+
+      <% i = i + 1
+         end %>
+  </div>
+
+
+</div>
