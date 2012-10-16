@@ -104,9 +104,11 @@ span {
   @extend button;
   background: $buttonBg;
   color: $buttonColor;
+  text-decoration:none;
   &:hover {
     background: $grey;
     color: $TextColor;
+    text-decoration:none;
   }
   &:active {
     background: $TextColor;
