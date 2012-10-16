@@ -83,7 +83,7 @@ div.page {
     float: none;
     margin: 0 auto;
     height:100%;
-    div.cards {
+    div.cards, div.activityCards {
       @include column(14);
       @include divReset;
       float: left;

@@ -4,6 +4,16 @@
 $ ->
 	$(document).ready ->
 		$('div.intrestCat').hide()
+		$('div.activityCards').hide()
+		$('nav#secondary ul li:first').addClass('navActive')
 	$('div.dashboard a#editIntrest').click (e) ->
 		e.preventDefault()
 		$('div.intrestCat').slideToggle()
+	$('nav#secondary ul li').click (e) ->
+		e.preventDefault()
+		$('nav#secondary ul li.navActive').removeClass()
+		$(@).addClass('navActive')
+		$('div.cards').fadeOut('fast')
+		$('div.activityCards').fadeIn('fast')
+
+

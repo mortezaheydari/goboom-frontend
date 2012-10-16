@@ -173,6 +173,35 @@
          end %>
     </div>
 
+    <div class="activityCards">
+      <% i = 0
+         while i<6 do %>
+          <article class="activityBox">
+            <header class="activityHeader">
+              <a href="#">
+                <%= image_tag "bg.png", class: "activityImage" %>
+              </a>
+              <h5 class="activityTitle text-left">
+                <a href="#">The maximum words available okay</a>
+              </h5>
+              <p class="text-left">Cross Country Running</p>
+            </header>
+
+            <div class="activityBody text-center">
+              <ul class="block-grid three-up">
+                <li><%= image_tag "1.png" %></li>
+                <li><div class="thumbsUp"></div> <span class="small-text">22</span> </li>
+                <li><div class="featureStar"></div> </li>
+              </ul>
+
+            </div>
+          </article>
+
+      <% i = i + 1
+         end %>
+
+    </div>
+
     <div class="sideBar">
 
       <div class="sideBox">

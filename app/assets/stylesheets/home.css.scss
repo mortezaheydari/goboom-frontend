@@ -64,6 +64,15 @@ div.shareButton {
   }
 }
 
+li.navActive {
+  @include background(linear-gradient(bottom, rgb(230,230,230) 0%, rgb(207,207,207) 73%));
+    border-right: 1px solid $navHoverBorder;
+    border-left: 1px solid $navHoverBorder;
+    a {
+      color: $NavTextColorHover;
+    }  
+}
+
 nav#secondary {
   height: $NavHeight;
   @include stretch;
