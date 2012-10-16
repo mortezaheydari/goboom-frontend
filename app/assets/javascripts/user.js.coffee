@@ -9,11 +9,15 @@ $ ->
 	$('div.dashboard a#editIntrest').click (e) ->
 		e.preventDefault()
 		$('div.intrestCat').slideToggle()
-	$('nav#secondary ul li').click (e) ->
+	$('nav#secondary ul li#activities').click (e) ->
 		e.preventDefault()
 		$('nav#secondary ul li.navActive').removeClass()
 		$(@).addClass('navActive')
 		$('div.cards').fadeOut('fast')
 		$('div.activityCards').fadeIn('fast')
-
-
+	$('nav#secondary ul li#players').click (e) ->
+		e.preventDefault()
+		$('nav#secondary ul li.navActive').removeClass()
+		$(@).addClass('navActive')
+		$('div.activityCards').fadeOut()
+		$('div.cards').fadeIn()
