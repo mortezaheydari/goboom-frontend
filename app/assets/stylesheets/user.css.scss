@@ -10,6 +10,7 @@ $blueprint_grid_width: 40px;
 @import "compass/utilities";
 @import "compass/layout/stretching";
 
+
 @mixin divReset {
     margin: 0 auto;
     overflow: visible;
@@ -17,6 +18,8 @@ $blueprint_grid_width: 40px;
     float: none;
     margin-bottom: 50px;
 }
+
+
 
 html, body {
   width: 100%;
@@ -27,6 +30,8 @@ div.page {
   @include container;
   @include divReset;
   margin-bottom: 0px;
+
+
 
   width: 100%;
 
@@ -95,6 +100,4 @@ div.page {
       float: left;
     }
   }
-
-
 }

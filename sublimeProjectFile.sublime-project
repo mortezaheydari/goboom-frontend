@@ -1,8 +1,10 @@
 {
-	"folders":
-	[
-		{
-			"path": "/Users/morteza/sites/goboom-frontend"
-		}
-	]
+ "folders": [
+  {
+   "path": "/Users/morteza/sites/goboom-frontend"
+  }, 
+  {
+   "path": "/Users/morteza/sites/goboom-frontend"
+  }
+ ]
 }
